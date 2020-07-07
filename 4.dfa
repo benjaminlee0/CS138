@@ -1,0 +1,20 @@
+alphabet: {a, b}
+start: a
+accepting: {baaa, baab, baba, babb, bbaa, bbab, bbba, bbbb}
+
+a (a -> a) (b -> b)
+b (a -> ba) (b -> bb)
+ba (a -> baa) (b -> bab)
+bb (a -> bba) (b -> bbb)
+baa (a -> baaa) (b -> baab)
+bab (a -> baba) (b -> babb)
+bba (a -> bbaa) (b -> bbab)
+bbb (a -> bbba) (b -> bbbb)
+baaa (a -> a) (b -> b)
+baab (a -> ba) (b -> bb)
+baba (a -> baa) (b -> bab)
+babb (a -> bba) (b -> bbb)
+bbaa (a -> baaa) (b -> baab)
+bbab (a -> baba) (b -> babb)
+bbba (a -> bbaa) (b -> bbab)
+bbbb (a -> bbba) (b -> bbbb)
