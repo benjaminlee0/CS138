@@ -1,16 +1,28 @@
 alphabet: {a, b}
 start: Q0
-accepting: {Q0, Q5, Q10}
+accepting: {Q0, a2, b3, c4, d5}
 
-Q0 (a -> Q1) (b -> Q6)
-Q1 (a -> Q2) (b -> Q11)
-Q2 (a -> Q3) (b -> Q11)
-Q3 (a -> Q4) (b -> Q11)
-Q4 (a -> Q5) (b -> Q11)
-Q5 (a -> Q1) (b -> Q6)
-Q6 (a -> Q11) (b -> Q7)
-Q7 (a -> Q11) (b -> Q8)
-Q8 (a -> Q11) (b -> Q9)
-Q9 (a -> Q11) (b -> Q10)
-Q10 (a -> Q11) (b -> Q6)
-Q11 (a -> Q11) (b -> Q11)
+Q0 (a -> a1) (b -> d2)
+a1 (a -> b1) (b -> a2)
+a2 (a -> trap) (b -> a3)
+a3 (a -> trap) (b -> a4)
+a4 (a -> trap) (b -> a5)
+a5 (a -> trap) (b -> a2)
+b1 (a -> c1) (b -> b2)
+b2 (a -> trap) (b -> b3)
+b3 (a -> trap) (b -> b4)
+b4 (a -> trap) (b -> b5)
+b5 (a -> trap) (b -> b2)
+c1 (a -> d1) (b -> c2)
+c2 (a -> trap) (b -> c3)
+c3 (a -> trap) (b -> c4)
+c4 (a -> trap) (b -> c5)
+c5 (a -> trap) (b -> c2)
+d1 (a -> a1) (b -> d2)
+d2 (a -> trap) (b -> d3)
+d3 (a -> trap) (b -> d4)
+d4 (a -> trap) (b -> d5)
+d5 (a -> trap) (b -> d2)
+trap (a -> trap) (b -> trap)
+
+

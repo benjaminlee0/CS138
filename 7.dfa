@@ -1,6 +1,6 @@
 alphabet: {a, b}
 start: 0
-accepting: {0, a, b, aa, ab, ba, bb, aaa, aab, aba, abb, baa, bab, bba, bbb, aabb, abab, abba, abbb, baba, babb, bbaa, bbab, bbba, bbbb}
+accepting: {0, a, b, aa, ab, ba, bb, aaa, aab, aba, abb, baa, bab, bba, bbb, aabb, abab, abba, abbb, baba, babb, bbaa, bbab, bbba, bbbb, baab}
 
 0 (a -> a) (b -> b)
 a (a -> aa) (b -> ab)
