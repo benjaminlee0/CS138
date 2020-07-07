@@ -1,6 +1,6 @@
 alphabet: {a, b}
 start: 0
-accepting: {a, b, aa, ab, ba, bb, aaa, aab, aba, abb, baa, bab, bba, bbb, aabb, abab, abba, abbb, baba, babb, bbaa, bbab, bbba, bbbb}
+accepting: {0, a, b, aa, ab, ba, bb, aaa, aab, aba, abb, baa, bab, bba, bbb, aabb, abab, abba, abbb, baba, babb, bbaa, bbab, bbba, bbbb}
 
 0 (a -> a) (b -> b)
 a (a -> aa) (b -> ab)
@@ -17,15 +17,15 @@ baa (a -> baaa) (b -> baab)
 bab (a -> baba) (b -> babb)
 bba (a -> bbaa) (b -> bbab)
 bbb (a -> bbba) (b -> bbbb)
-aaaa (a -> a) (b -> b)
-aaab (a -> a) (b -> b)
-aaba (a -> a) (b -> b)
+aaaa (a -> trap) (b -> trap)
+aaab (a -> trap) (b -> trap)
+aaba (a -> trap) (b -> trap)
 aabb (a -> a) (b -> b)
-abaa (a -> a) (b -> b)
+abaa (a -> trap) (b -> trap)
 abab (a -> a) (b -> b)
 abba (a -> a) (b -> b)
 abbb (a -> a) (b -> b)
-baaa (a -> a) (b -> b)
+baaa (a -> trap) (b -> trap)
 baba (a -> a) (b -> b)
 babb (a -> a) (b -> b)
 bbaa (a -> a) (b -> b)
@@ -33,3 +33,4 @@ bbab (a -> a) (b -> b)
 bbba (a -> a) (b -> b)
 bbbb (a -> a) (b -> b)
 baab (a -> a) (b -> b)
+trap (a -> trap) (b -> trap)
